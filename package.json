@@ -1,0 +1,72 @@
+{
+  "private": true,
+  "scripts": {
+    "start": "set NODE_OPTIONS=--openssl-legacy-provider && umi dev",
+    "dev": "set NODE_OPTIONS=--openssl-legacy-provider && umi dev",
+    "build": "set NODE_OPTIONS=--openssl-legacy-provider && umi build",
+    "prod": "set NODE_OPTIONS=--openssl-legacy-provider && umi build",
+    "postinstall": "umi generate tmp",
+    "prettier": "prettier --write '**/*.{js,jsx,tsx,ts,less,md,json}'",
+    "test": "umi-test",
+    "test:coverage": "umi-test --coverage"
+  },
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,jsx,less,md,json}": [
+      "prettier --write"
+    ],
+    "*.ts?(x)": [
+      "prettier --parser=typescript --write"
+    ]
+  },
+  "eslintConfig": {
+    "extends": [
+      "xforceplus"
+    ],
+    "rules": {
+      "@typescript-eslint/no-explicit-any": 0,
+      "react/display-name": 0,
+      "react-hooks/exhaustive-deps": 0,
+      "@typescript-eslint/ban-ts-comment": 0
+    }
+  },
+  "dependencies": {
+    "@ant-design/pro-layout": "^6.5.0",
+    "@types/lodash": "^4.14.181",
+    "antd": "^3.26.20",
+    "antd-mobile": "^5.1.0",
+    "antd-mobile-icons": "^0.2.2",
+    "antd-mobile-v2": "^2.3.4",
+    "axios": "^1.7.2",
+    "dayjs": "^1.11.0",
+    "dingtalk-jsapi": "^2.13.92",
+    "js-cookie": "^3.0.1",
+    "lodash": "^4.17.21",
+    "react": "17.x",
+    "react-dom": "17.x",
+    "react-query": "^3.34.16",
+    "umi": "^3.5.21",
+    "uuid": "^8.3.2",
+    "wechat-jssdk": "^5.1.0",
+    "weixin-webview-jssdk": "^0.0.2"
+  },
+  "devDependencies": {
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0",
+    "@types/uuid": "^8.3.4",
+    "@umijs/plugin-antd-mobile": "^1.2.0",
+    "@umijs/test": "^3.5.21",
+    "autoprefixer": "^9.8.8",
+    "eslint": "^8.16.0",
+    "lint-staged": "^10.0.7",
+    "postcss": "^7.0.39",
+    "prettier": "^2.2.0",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.17",
+    "typescript": "^4.1.2",
+    "vconsole": "^3.14.2",
+    "yorkie": "^2.0.0"
+  },
+  "__npminstall_done": false
+}

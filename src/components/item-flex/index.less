@@ -1,0 +1,26 @@
+.custom-item {
+  display: flex;
+  align-items: center;
+  color: #222;
+  &__left {
+    min-width: 96px;
+  }
+  &--start {
+    justify-content: start;
+  }
+  &--end {
+    justify-content: end;
+  }
+  &--center {
+    justify-content: center;
+  }
+  &--space-around {
+    justify-content: space-around;
+  }
+  &--space-between {
+    justify-content: space-between;
+  }
+  + .custom-item {
+    margin-top: 16px;
+  }
+}

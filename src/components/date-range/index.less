@@ -1,0 +1,137 @@
+.custom-date-arrow {
+  color: #222222;
+  font-weight: 400;
+  font-size: 14px;
+  font-family: 'PingFang SC';
+  font-style: normal;
+  position: relative;
+}
+
+.custom-date-arrow-down {
+  color: #3c619a;
+}
+
+.popup-calendar-safe-area {
+  display: block;
+  width: 100%;
+  background-color: #fff;
+}
+
+.custom-date-arrow::after {
+  // position: absolute;
+  // top: 50%;
+  // right: -20px;
+  // left: 60px;
+  margin-top: -5px;
+  margin-left: 8px;
+  // margin-top: 4rpx;
+  content: '';
+  border: 3px solid;
+  border-color: transparent transparent var(--gray-4, #dcdee0)
+    var(--gray-4, #dcdee0);
+  opacity: 0.8;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  border-top-width: 4px;
+  border-right-width: 4px;
+  border-bottom-width: 4px;
+  border-left-width: 4px;
+  border-top-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
+  border-image-source: initial;
+  border-image-slice: initial;
+  border-image-width: initial;
+  border-image-outset: initial;
+  border-image-repeat: initial;
+}
+
+// .custom-arrow::after {
+//   margin-top: -2rpx;
+//   -webkit-transform: rotate(135deg);
+//   -ms-transform: rotate(135deg);
+//   transform: rotate(135deg);
+//   border-color: transparent transparent currentColor currentColor;
+//   border-top-color: transparent;
+//   border-right-color: transparent;
+//   border-bottom-color: currentcolor;
+//   border-left-color: currentcolor;
+// }
+
+.custom-tag-normal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 42px;
+  // line-height: 42px;
+  border-radius: 6px;
+  border: 1px solid #fafaf8;
+  font-family: 'PingFang SC';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  /* identical to box height, or 20px */
+  text-align: center;
+  background: #f3f3f3;
+  color: #222222;
+  margin-bottom: 12px;
+  position: relative;
+}
+
+.custom-tag-active {
+  // border-color: #3C619A;
+  background: rgba(60, 97, 154, 0.1);
+  color: #3c619a;
+}
+
+.custom-tag-normal-outline {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 42px;
+  // line-height: 42px
+  border-radius: 6px;
+  border: 1px solid #eee;
+  font-family: 'PingFang SC';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  /* identical to box height, or 20px */
+  text-align: center;
+  color: #222222;
+  margin-bottom: 12px;
+  position: relative;
+}
+
+.custom-tag-normal-outline-active {
+  // border-color: #3C619A;
+  border: 1px solid #3c619a;
+}
+
+.custom-tag-selected-wrap {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid #3c619a;
+  border-left: 10px solid transparent;
+  border-right: 10px solid #3c619a;
+  border-radius: 4px 0 4px 0;
+}
+.custom-tag-selected-icon {
+  position: absolute;
+  left: 0;
+  top: -2px;
+  height: 6px;
+  width: 8px;
+}
+
+.custom-popup-button {
+  width: 175px;
+}
